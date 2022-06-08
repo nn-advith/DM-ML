@@ -1,11 +1,13 @@
 mkdir -p ~/.streamlit/
-echo "[theme]
-base='light'
-primaryColor='#ff1490'
-secondaryBackgroundColor='#f9a0dc'
-textColor='#000000'
-[server]
-headless = true
-port = $PORT
-enableCORS = false
+
+echo "\
+[general]\n\
+email = \"haha12345advith@gmail.com\"\n\
+" > ~/.streamlit/credentials.toml
+
+echo "\
+[server]\n\
+headless = true\n\
+enableCORS=false\n\
+port = $PORT\n\
 " > ~/.streamlit/config.toml
